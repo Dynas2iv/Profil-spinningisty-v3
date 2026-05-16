@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spiningisty - Węzły Wędkarskie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Styl dla Szybkiego Menu Nawigacyjnego (Filtrów) */
+           .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; 
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .quick-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: #0a0a0a;
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .quick-nav a:hover {
+            color: #000;
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        .produkt-zdiecie img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+            mix-blend-mode: lighten; 
+        }
+        
+        .kolory-lista {
+            font-size: 0.75rem;
+            color: var(--primary);
+            margin-top: 10px;
+            font-weight: 500;
+            border-top: 1px dashed #333;
+            padding-top: 8px;
+        }
+        
+        .badge-new {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="baner">
+        <header>
+            Profil Spiningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Strona Główna</b></a></li>
+                <li><a href="wedki.html"><b>Wędki</b></a></li>
+                <li><a href="kolowrotki.html"><b>Kołowrotki</b></a></li>
+                <li><a href="przynety.html"><b>Przynęty</b></a></li>
+                <li><a href="plecionki.html"><b>Plecionki</b></a></li> 
+                <li><a href="wezły.html" class="active"><b>Węzły</b></a></li>
+                <li><a href="forum.html"><b>Galeria Życiówek</b></a></li>
+                <li><a href="Batymetria.html"><b>Batymetria</b></a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            
+
+<main>
+    <div class="retina-overlay"></div>
+    <canvas id="abyss-canvas"></canvas>
+            <div class="przycisk">  
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-5748252d-5e99-4d62-b13a-4132ff7154f5" data-elfsight-app-lazy></div>
+            </div>   
+        
+            <div class="opis-strony">
+                Nawet najdroższa wędka i kołowrotek na nic się zdadzą, jeśli zawiedzie najważniejszy punkt zestawu – <strong>węzeł</strong>. Poniżej zebraliśmy najpopularniejsze i najbardziej niezawodne węzły wędkarskie, które każdy spinningista powinien mieć w małym palcu. Podzieliliśmy je na kategorie ułatwiające dobranie odpowiedniego splotu do sytuacji nad wodą.
+            </div>
+
+            <div class="quick-nav">
+                <a href="#laczenie-linek">Łączenie linek (Plecionka + Fluoro)</a>
+                <a href="#wiazanie-przynet">Wiązanie agrafek i przynęt</a>
+                <a href="#petle">Pętle wędkarskie</a>
+                <a href="#szpula">Węzły na szpulę (inne)</a>
+            </div>
+
+            <div class="kategoria" id="laczenie-linek">Łączenie linek (Przypony)</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-fg" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-fg.webp" alt="Węzeł FG"></a></div>
+                    <div class="produkt-body">
+                        Węzeł FG
+                        <div class="produkt-opis">Cienki, super mocny węzeł do łączenia plecionki z grubym przyponem (monofilament lub fluorocarbon). Przechodzi przez przelotki gładko i bez zacięć.</div>
+                        <div class="kolory-lista">Przeznaczenie: Główny węzeł do łączenia plecionki z FC.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-fg" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-albright" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-albright.webp" alt="Węzeł Albright"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Albright
+                        <div class="produkt-opis">Szybkie i proste łączenie żyłek wędkarskich z różnych materiałów lub o różnych średnicach. Dobra alternatywa dla początkujących spinningistów.</div>
+                        <div class="kolory-lista">Przeznaczenie: Szybkie wiązanie przyponu.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-albright" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-alberto" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-alberto.webp" alt="Węzeł Alberto"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Alberto
+                        <div class="produkt-opis">Zmodyfikowana, ulepszona wersja węzła Albright. Jeszcze lepiej radzi sobie z łączeniem śliskich linek o różnej średnicy.</div>
+                        <div class="kolory-lista">Przeznaczenie: Plecionka + Fluorocarbon.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-alberto" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-jukatan" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-jukatan.webp" alt="Węzeł Jukatan"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Jukatan
+                        <div class="produkt-opis">Mocny węzeł wędkarski do łączenia cienkiej żyłki z grubszym przyponem. Wykorzystywany głównie przy zestawach na ciężkie drapieżniki morskie i śródlądowe.</div>
+                        <div class="kolory-lista">Przeznaczenie: Grube przypony fluorocarbonowe.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-jukatan" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-baryłkowy" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-baryłkowy.webp" alt="Węzeł baryłkowy"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Baryłkowy (Blood Knot)
+                        <div class="produkt-opis">Świetny klasyk do łączenia dwóch żyłek wędkarskich o bardzo zbliżonej lub identycznej średnicy.</div>
+                        <div class="kolory-lista">Przeznaczenie: Żyłka + Żyłka (podobna grubość).</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-baryłkowy" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+            </div>
+
+            <div class="kategoria" id="wiazanie-przynet">Wiązanie agrafek i przynęt</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-palomar" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-palomar.webp" alt="Węzeł Palomar"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Palomar
+                        <div class="produkt-opis">Niezawodny, prosty w wiązaniu i niezwykle mocny węzeł do mocowania plecionki lub żyłki do agrafek, krętlików i haków offsetowych. Nie osłabia plecionki!</div>
+                        <div class="kolory-lista">Przeznaczenie: Agrafki, Haki, Krętliki (Plecionka).</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-palomar" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/ulepszony-węzeł-klinczowy" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/ulepszony-węzeł-klinczowy.webp" alt="Ulepszony węzeł klinczowy"></a></div>
+                    <div class="produkt-body">
+                        Ulepszony węzeł klinczowy
+                        <div class="produkt-opis">Podstawa spinningu. Mocowanie żyłki wędkarskiej lub fluorocarbonu do oczka haczyka czy krętlika. Odradzany do bardzo śliskich plecionek.</div>
+                        <div class="kolory-lista">Przeznaczenie: Agrafki (Żyłka i Fluorocarbon).</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/ulepszony-węzeł-klinczowy" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-grinnera" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-grinnera.webp" alt="Węzeł Grinnera (Uni)"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Grinnera (Uni Knot)
+                        <div class="produkt-opis">Uniwersalny węzeł wędkarski do mocowania linki do kołowrotków, przynęt i much. Zaciska się gładko nie "paląc" materiału.</div>
+                        <div class="kolory-lista">Przeznaczenie: Wszechstronny (Plecionka i Żyłka).</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-grinnera" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-trilene" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-trilene.webp" alt="Węzeł Trilene"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Trilene
+                        <div class="produkt-opis">Mocny, niezawodny węzeł, którego wiązanie polega na dwukrotnym przełożeniu żyłki przez oczko. Znacznie wytrzymalszy od zwykłego węzła klinczowego.</div>
+                        <div class="kolory-lista">Przeznaczenie: Żyłki i cienkie fluorocarbony.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-trilene" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/zacisk-san-diego-węzeł" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/zacisk-san-diego-węzeł.webp" alt="Zacisk San Diego"></a></div>
+                    <div class="produkt-body">
+                        Zacisk San Diego (Jam Knot)
+                        <div class="produkt-opis">Mocny węzeł końcowy do pewnego mocowania ciężkich przynęt, haczyka lub muchy. Ulubiony splot wielu łowców morskich.</div>
+                        <div class="kolory-lista">Przeznaczenie: Wędkarstwo na ciężko.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/zacisk-san-diego-węzeł" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+            </div>
+
+            <div class="kategoria" id="petle">Pętle Wędkarskie</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-rapala" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-rapala.webp" alt="Węzeł Rapala"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Rapala
+                        <div class="produkt-opis">Końcowy węzeł pętlowy stworzony specjalnie do wiązania woblerów bez użycia agrafki. Pozwala zachować ich idealny, naturalny ruch w wodzie.</div>
+                        <div class="kolory-lista">Przeznaczenie: Bezpośrednie wiązanie woblerów.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-rapala" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/pętla-kreha-węzeł" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/pętla-kreha-węzeł.webp" alt="Pętla Kreha"></a></div>
+                    <div class="produkt-body">
+                        Pętla Kreha (Non-Slip Mono)
+                        <div class="produkt-opis">Świetnie sprawdza się w przypadku much oraz niedużych przynęt spinningowych. Pętla nie zaciska się pod obciążeniem i jest szybsza w wiązaniu niż Rapala.</div>
+                        <div class="kolory-lista">Przeznaczenie: Streamery, smużki, małe woblery.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/pętla-kreha-węzeł" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/pętla-wędkarska-węzeł" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/pętla-wędkarska-węzeł.webp" alt="Pętla wędkarska"></a></div>
+                    <div class="produkt-body">
+                        Pętla Wędkarska (Perfection Loop)
+                        <div class="produkt-opis">Mała, pewna, stała pętla na końcu liny lub żyłki wędkarskiej. Służy do łączenia zestawów metodą "pętla w pętlę".</div>
+                        <div class="kolory-lista">Przeznaczenie: Tworzenie pętli na przyponach.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/pętla-wędkarska-węzeł" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/boczna-pętla-węzeł" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/boczna-pętla-węzeł.webp" alt="Boczna pętla"></a></div>
+                    <div class="produkt-body">
+                        Boczna pętla (Dropper Loop)
+                        <div class="produkt-opis">Prostopadła pętla w połowie długości żyłki. Służy do zaczepiania dodatkowych haczyków (np. w systemach drop-shot i przyponach śledziowych).</div>
+                        <div class="kolory-lista">Przeznaczenie: Troki boczne, Paternoster.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/boczna-pętla-węzeł" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+            </div>
+
+            <div class="kategoria" id="szpula">Węzły na szpulę (i inne)</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-kołowrotkowy" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-kołowrotkowy.webp" alt="Węzeł kołowrotkowy"></a></div>
+                    <div class="produkt-body">
+                        Węzeł kołowrotkowy (Arbor Knot)
+                        <div class="produkt-opis">Podstawa rozpoczęcia przygody! Płaski, samozaciskający się węzeł, służący do bezpiecznego mocowania żyłki lub plecionki bezpośrednio do szpuli kołowrotka.</div>
+                        <div class="kolory-lista">Przeznaczenie: Nawijanie linki na kołowrotek.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-kołowrotkowy" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><a href="https://knots3d.com/pl/węzeł-gwóźdź" target="_blank"><img src="https://knots3d.com/pl/image/thumbnails/węzeł-gwóźdź.webp" alt="Węzeł gwóźdź"></a></div>
+                    <div class="produkt-body">
+                        Węzeł Gwóźdź (Nail Knot)
+                        <div class="produkt-opis">Klasyczny, kompaktowy węzeł wymagający użycia rurki (lub gwoździa). Bardzo gładko przechodzi przez przelotki. Wymaga wprawy, lecz zapewnia niesamowitą wytrzymałość.</div>
+                        <div class="kolory-lista">Przeznaczenie: Łączenie grubego sznura z żyłką.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://knots3d.com/pl/węzeł-gwóźdź" target="_blank">Zobacz instrukcję</a></div>
+                </div>
+
+            </div>
+<script>
+    // ABYSS CORE GRAPHICS ENGINE
+    const canvas = document.getElementById('abyss-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, boids = [];
+    const cursor = { x: -2000, y: -2000 };
+
+    function initCanvasSize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    class BoidAI {
+        constructor() {
+            this.x = Math.random() * width; this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 2; this.vy = (Math.random() - 0.5) * 2;
+            this.size = Math.random() * 2 + 1;
+        }
+        update() {
+            let d = Math.hypot(this.x - cursor.x, this.y - cursor.y);
+            if (d < 250) { 
+                this.vx += ((this.x - cursor.x) / d) * 1.2; 
+                this.vy += ((this.y - cursor.y) / d) * 1.2; 
+            }
+            this.x += this.vx; this.y += this.vy;
+            this.vx *= 0.96; this.vy *= 0.96;
+            if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+            if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+        }
+        draw() { 
+            ctx.fillStyle = 'rgba(175, 154, 100, 0.15)'; 
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); 
+        }
+    }
+
+    function createBoidsCluster() { 
+        initCanvasSize(); 
+        boids = []; 
+        for(let i=0; i<100; i++) boids.push(new BoidAI()); 
+    }
+
+    function coreRenderLoop() {
+        ctx.clearRect(0, 0, width, height); 
+        ctx.strokeStyle = 'rgba(175, 154, 100, 0.02)'; 
+        ctx.beginPath();
+        for(let i=0; i<boids.length; i++) { 
+            for(let j=i+1; j<boids.length; j++) { 
+                if(Math.hypot(boids[i].x - boids[j].x, boids[i].y - boids[j].y) < 140) { 
+                    ctx.moveTo(boids[i].x, boids[i].y); 
+                    ctx.lineTo(boids[j].x, boids[j].y); 
+                } 
+            } 
+        }
+        ctx.stroke(); 
+        boids.forEach(b => { b.update(); b.draw(); }); 
+        requestAnimationFrame(coreRenderLoop);
+    }
+
+    window.addEventListener('mousemove', (e) => { cursor.x = e.clientX; cursor.y = e.clientY; });
+    window.addEventListener('resize', initCanvasSize);
+    createBoidsCluster(); coreRenderLoop();
+</script>
+        </main>
+
+        <footer>
+            Stronę stworzył: Piotr Janasz | Encyklopedia Węzłów dla Spinningistów
+        </footer>
+    </div>
+
+</body>
+</html>

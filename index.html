@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spiningisty - Strona Główna</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lista{
+            text-align: center;
+        }
+        .lista {
+    display: flex;
+    justify-content: center; /* Centrowanie w poziomie */
+    align-items: center;     /* Centrowanie w pionie */
+    gap: 30px;               /* Odstęp między widżetami w środku */
+    flex-wrap: wrap;         /* Żeby na telefonie widżety ładnie wskoczyły jeden pod drugi */
+    width: auto;
+    height: auto;
+}
+    .p1{
+        height: 540px;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="baner">
+        
+        <header>
+            Profil Spiningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Strona Główna</b></a></li>
+                <li><a href="wedki.html"><b>Wędki</b></a></li>
+                <li><a href="kolowrotki.html"><b>Kołowrotki</b></a></li>
+                <li><a href="przynety.html"><b>Przynęty</b></a></li>
+                <li><a href="plecionki.html"><b>Plecionki</b></a></li> 
+                <li><a href="wezły.html"><b>Węzły</b></a></li>
+                <li><a href="forum.html"><b>Galeria Życiówek</b></a></li>
+                <li><a href="Batymetria.html"><b>Batymetria</b></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="retina-overlay"></div>
+<canvas id="abyss-canvas"></canvas>
+            <div class="przycisk">  
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-5748252d-5e99-4d62-b13a-4132ff7154f5" data-elfsight-app-lazy></div>
+            </div>
+
+            <div class="opis-strony">
+                Wybór odpowiedniej taktyki decyduje o prowokacji drapieżnika. Poniżej prezentujemy interaktywne narzędzia, dynamiczne moduły oraz mapy batymetryczne, które pomogą zaplanować każdą udaną wyprawę spinningową.
+            </div>
+
+            <div class="kategoria">⏱️ Monitorowanie warunków i czasu nad wodą</div>
+            <div class="lista">
+                <div class="produkt">
+                
+                    <div class="produkt-zdiecie" style="padding: 10px; display: flex; align-items: center; justify-content: center; background: #fff; min-height: 150px;">
+                        <span style="font-size: 50px;">⏳</span>
+                    </div>
+                    <div class="produkt-body">
+                        Licznik czasu wędkarskiego
+                        <div class="produkt-opis">
+                            <script src="https://elfsightcdn.com/platform.js" async></script>
+                            <div class="elfsight-app-98ed733d-5330-4819-9a58-e6b02eda91fc" data-elfsight-app-lazy></div>
+                        </div>
+                    </div>
+                    <br></br>
+                </div>
+
+                <div class="produkt">
+                    <div class="p1">
+                    <div class="produkt-zdiecie" style="padding: 10px; display: flex; align-items: center; justify-content: center; background: #fff; min-height: 150px;">
+                        <span style="font-size: 50px;">🌤️</span>
+                    </div>
+                    <div class="produkt-body">
+                        Barometr i Pogoda Solarna
+                        <div class="produkt-opis">
+                            <script src="https://elfsightcdn.com/platform.js" async></script>
+                            <div class="elfsight-app-e3ea76b3-7a32-472e-9e46-57c64c4e0542" data-elfsight-app-lazy></div>
+                        </div></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="kategoria">🗺️ Lokacje i ukształtowanie dna</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie" style="padding: 10px; display: flex; align-items: center; justify-content: center; background: #fff; min-height: 150px;">
+                        <span style="font-size: 50px;">⚓</span>
+                    </div>
+                    <div class="produkt-body">
+                        Mapy Batymetryczne
+                        <div class="produkt-opis">
+                            Szczegółowe rzuty głębokości, podwodne górki, koryta rzeczne oraz blaty zarośnięte. Sprawdź izobaty i ukształtowanie struktury dna zbiorników.
+                        </div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="Batymetria.html#Batymeria">Zobacz batymetrię</a></div>
+                </div>
+
+               <div class="produkt">
+    <div class="produkt-zdiecie" style="padding: 10px; display: flex; align-items: center; justify-content: center; background: #fff; min-height: 150px;">
+        <span style="font-size: 50px;">📍</span>
+    </div>
+    <div class="produkt-body">
+        Wybrane Łowiska
+        <div class="produkt-opis">
+            Interaktywna mapa lokalizacji wybranych akwenów spinningowych. Sprawdź dojazd, punkty orientacyjne oraz najlepsze strefy brzegowe.
+        </div>
+    </div>
+    <div class="produkt-przycisk">
+        <a href="Batymetria.html" onclick="sessionStorage.setItem('zjedzNaDol', 'true');">Zobacz łowiska</a>
+    </div>
+</div>
+
+            </div>
+
+            <script>
+    // ABYSS CORE GRAPHICS ENGINE
+    const canvas = document.getElementById('abyss-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, boids = [];
+    const cursor = { x: -2000, y: -2000 };
+
+    function initCanvasSize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    class BoidAI {
+        constructor() {
+            this.x = Math.random() * width; this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 2; this.vy = (Math.random() - 0.5) * 2;
+            this.size = Math.random() * 2 + 1;
+        }
+        update() {
+            let d = Math.hypot(this.x - cursor.x, this.y - cursor.y);
+            if (d < 250) { 
+                this.vx += ((this.x - cursor.x) / d) * 1.2; 
+                this.vy += ((this.y - cursor.y) / d) * 1.2; 
+            }
+            this.x += this.vx; this.y += this.vy;
+            this.vx *= 0.96; this.vy *= 0.96;
+            if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+            if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+        }
+        draw() { 
+            ctx.fillStyle = 'rgba(175, 154, 100, 0.15)'; 
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); 
+        }
+    }
+
+    function createBoidsCluster() { 
+        initCanvasSize(); 
+        boids = []; 
+        for(let i=0; i<100; i++) boids.push(new BoidAI()); 
+    }
+
+    function coreRenderLoop() {
+        ctx.clearRect(0, 0, width, height); 
+        ctx.strokeStyle = 'rgba(175, 154, 100, 0.02)'; 
+        ctx.beginPath();
+        for(let i=0; i<boids.length; i++) { 
+            for(let j=i+1; j<boids.length; j++) { 
+                if(Math.hypot(boids[i].x - boids[j].x, boids[i].y - boids[j].y) < 140) { 
+                    ctx.moveTo(boids[i].x, boids[i].y); 
+                    ctx.lineTo(boids[j].x, boids[j].y); 
+                } 
+            } 
+        }
+        ctx.stroke(); 
+        boids.forEach(b => { b.update(); b.draw(); }); 
+        requestAnimationFrame(coreRenderLoop);
+    }
+
+    window.addEventListener('mousemove', (e) => { cursor.x = e.clientX; cursor.y = e.clientY; });
+    window.addEventListener('resize', initCanvasSize);
+    createBoidsCluster(); coreRenderLoop();
+</script>
+        </main>
+
+        <footer>
+            stronę stworzył: Piotr Janasz
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spiningisty - Plecionki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+             .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; 
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .quick-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: #0a0a0a;
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .quick-nav a:hover {
+            color: #000;
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        .produkt-zdiecie img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+            mix-blend-mode: lighten; 
+        }
+        
+        .kolory-lista {
+            font-size: 0.75rem;
+            color: var(--primary);
+            margin-top: 10px;
+            font-weight: 500;
+            border-top: 1px dashed #333;
+            padding-top: 8px;
+        }
+        
+        .badge-new {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="retina-overlay"></div>
+<canvas id="abyss-canvas"></canvas>
+    <div class="baner">
+        <header>
+            Profil Spiningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Strona Główna</b></a></li>
+                <li><a href="wedki.html"><b>Wędki</b></a></li>
+                <li><a href="kolowrotki.html"><b>Kołowrotki</b></a></li>
+                <li><a href="przynety.html"><b>Przynęty</b></a></li>
+                <li><a href="plecionki.html" class="active"><b>Plecionki</b></a></li> 
+                <li><a href="wezły.html"><b>Węzły</b></a></li>
+                <li><a href="forum.html"><b>Galeria Życiówek</b></a></li>
+                <li><a href="Batymetria.html"><b>Batymetria</b></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="przycisk">  
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-5748252d-5e99-4d62-b13a-4132ff7154f5" data-elfsight-app-lazy></div>
+            </div>   
+        
+            <div class="opis-strony">
+                Mocna i gładka plecionka gwarantuje bezpośredni kontakt z przynętą i pewność podczas atomowych brań drapieżników. Wybierz idealną linkę dostosowaną do Twoich potrzeb – od precyzyjnych linek okoniowych po pancerne plecionki szczupakowe.
+            </div>
+
+            <div class="quick-nav">
+                <a href="#mahi-mahi">Mahi Mahi Superior</a>
+                <a href="#westin-lines">Plecionki Westin</a>
+            </div>
+
+            <div class="kategoria" id="mahi-mahi">Plecionki Mahi Mahi Superior</div>
+
+            <div class="opis-strony">
+                <strong>Mahi Mahi Superior</strong> to uznany polski producent plecionek wędkarskich, który cały proces produkcji realizuje lokalnie. Produkty te wykonane są z najlepszych włókien polietylenowych Spectra (od amerykańskiej firmy Honeywell), które są nawet 15 razy silniejsze od stali. Brak chemicznego barwienia (w białych modelach) oraz rewelacyjny stosunek jakości do ceny sprawiają, że są to plecionki do zadań specjalnych.
+            </div>
+
+            <div class="quick-nav" style="position: relative; top: 0; box-shadow: none;">
+                <a href="#mahi-x4">Mahi Mahi x4 (4-splotowe)</a>
+                <a href="#mahi-x8">Mahi Mahi x8 (8-splotowe)</a>
+            </div>
+
+            <div class="kategoria" id="mahi-x4">Mahi Mahi Superior x4 (150m)</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><img src="https://sklepdrapieznik.pl/202089-large_default/plecionka-mahi-mahi-superior-x4-pink-150m-010mm.jpg" alt="Mahi Mahi Superior x4 Pink"></div>
+                    <div class="produkt-body">
+                        Mahi Mahi Superior x4 PINK
+                        <div class="produkt-opis">Czterosplotowa plecionka w świetnie widocznym, różowym kolorze. Bardzo mocna, odporna na przetarcia i świetnie sprawdzająca się podczas finezyjnego łowienia okoni czy pstrągów.</div>
+                        <div class="kolory-lista">Dostępne średnice: 0.06mm, 0.08mm, 0.10mm. Szpula: 150m.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://sklepdrapieznik.pl/brand/174-mahi-mahi" target="_blank">Zobacz modele</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><img src="https://sklepdrapieznik.pl/195268-large_default/plecionka-mahi-mahi-superior-x4-lime-150m-014mm.jpg" alt="Mahi Mahi Superior x4 Lime"></div>
+                    <div class="produkt-body">
+                        Mahi Mahi Superior x4 LIME
+                        <div class="produkt-opis">Plecionka w jaskrawym kolorze limonkowym (Lime), co znacznie ułatwia obserwację linki i detekcję delikatnych brań z opadu. Idealna pod sandacza.</div>
+                        <div class="kolory-lista">Dostępne średnice: od 0.06mm do 0.14mm. Szpula: 150m.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://sklepdrapieznik.pl/brand/174-mahi-mahi" target="_blank">Zobacz modele</a></div>
+                </div>
+
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><img src="https://sklepdrapieznik.pl/194703-large_default/plecionka-mahi-mahi-superior-x4-white-150m-014mm.jpg" alt="Mahi Mahi Superior x4 White"></div>
+                    <div class="produkt-body">
+                        Mahi Mahi Superior x4 WHITE
+                        <div class="produkt-opis">Flagowy produkt marki. Śnieżnobiały, naturalny kolor uzyskany bez żadnego chemicznego barwienia. Nie płoszy ryb i gwarantuje najwyższą żywotność włókien Spectra.</div>
+                        <div class="kolory-lista">Dostępne średnice: od 0.06mm do 0.14mm. Szpula: 150m.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://sklepdrapieznik.pl/brand/174-mahi-mahi" target="_blank">Zobacz modele</a></div>
+                </div>
+
+            </div>
+
+            <div class="kategoria" id="mahi-x8">Mahi Mahi Superior x8 (150m)</div>
+            <div class="lista">
+                
+                <div class="produkt">
+                    <div class="produkt-zdiecie"><img src="https://sklepdrapieznik.pl/152042-large_default/plecionka-mahi-mahi-superior-x8-150m-022mm.jpg" alt="Mahi Mahi Superior x8 White"></div>
+                    <div class="produkt-body">
+                        Mahi Mahi Superior x8 WHITE
+                        <div class="produkt-opis">Ośmiosplotowa, idealnie okrągła i bezszelestna na przelotkach plecionka. Umożliwia najdalsze rzuty i zapewnia perfekcyjną czułość. Brak chemicznego barwienia (czysta biel).</div>
+                        <div class="kolory-lista">Szeroki zakres średnic: od 0.10mm aż do 0.27mm! Szpula: 150m.</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://sklepdrapieznik.pl/brand/174-mahi-mahi" target="_blank">Zobacz modele</a></div>
+                </div>
+
+            </div>
+
+            <div class="kategoria" id="westin-lines">Plecionki Westin (W10, W8, W6, W3)</div>
+
+            <div class="opis-strony">
+                Plecionki <strong>Westin</strong> wykonane są wyłącznie z włókien polietylenowych o ultra wysokim module sprężystości (UHMPE), znanych z wyjątkowej wytrzymałości w stosunku do ich średnicy. To, co wyróżnia te produkty, to skrupulatny dobór liczby włókien tworzących splot. Większa liczba włókien tworzy plecionkę o bardziej okrągłym profilu i mniejszej średnicy, co drastycznie poprawia odległość rzutów, czułość oraz wytrzymałość.
+            </div>
+
+            <div class="quick-nav" style="position: relative; top: 0; box-shadow: none;">
+                <a href="#westin-w10">Seria W10 (Premium)</a>
+                <a href="#westin-w8">Seria W8 (Pro)</a>
+                <a href="#westin-w6">Seria W6 (Performance)</a>
+                <a href="#westin-w3">Seria W3 (Standard)</a>
+            </div>
+
+            <div class="lista">
+                
+                <div class="produkt" id="westin-w10">
+                    <div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/9775e701-1be8-41db-8807-e5665fbdc5ac/l002_w10-13-braid-coastal_headline.jpg/small" alt="W10 Plecione Linie"></div>
+                    <div class="produkt-body">
+                        Westin W10 Braid
+                        <div class="produkt-opis">Absolutny top. Innowacyjna, 13-splotowa konstrukcja zapewniająca niespotykaną gładkość, okrągłość i wytrzymałość. Stworzona dla najbardziej wymagających wędkarzy poszukujących najwyższej jakości na rynku.</div>
+                        <div class="kolory-lista">Splot: 13x | Przeznaczenie: Wędkarstwo Premium / Zawody</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w10-plecione-linie" target="_blank">Zobacz modele</a></div>
+                </div>
+
+                <div class="produkt" id="westin-w8">
+                    <div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/371f74f4-bb9e-42bd-8584-a60d7283908a/l019_w8-9-braid-oceanic-forge_headline.jpg/small" alt="W8 Plecione Linie"></div>
+                    <div class="produkt-body">
+                        Westin W8 Braid
+                        <div class="produkt-opis">Wysokiej klasy, gęsto pleciona linka zapewniająca niesamowicie dalekie i ciche rzuty. Doskonały stosunek wytrzymałości do średnicy oraz świetna odporność na ścieranie w trudnych warunkach.</div>
+                        <div class="kolory-lista">Splot: 8x | Przeznaczenie: Zaawansowany Spinning & Casting</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w8-plecione-linie" target="_blank">Zobacz modele</a></div>
+                </div>
+
+                <div class="produkt" id="westin-w6">
+                    <div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/0ca3c8fb-d191-4156-826e-f46f634b6d18/l003_w6-8-braid_x1.jpg/small" alt="W6 Plecione Linie"></div>
+                    <div class="produkt-body">
+                        Westin W6 Braid
+                        <div class="produkt-opis">Niezawodny koń pociągowy z popularnej serii W6. Konstrukcja z japońskich włókien UHMPE oferuje perfekcyjną czułość i gładkość. Świetny kompromis między ceną a profesjonalną jakością.</div>
+                        <div class="kolory-lista">Splot: 8x | Przeznaczenie: Wszechstronne łowienie drapieżników</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w6-plecione-linie" target="_blank">Zobacz modele</a></div>
+                </div>
+
+                <div class="produkt" id="westin-w3">
+                    <div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/32d30ed8-1d7e-4e5a-bfe3-855cf530cbac/l010_w3-8-braid_headline_new.jpg/small" alt="W3 Plecione Linie"></div>
+                    <div class="produkt-body">
+                        Westin W3 Braid
+                        <div class="produkt-opis">Niezawodna plecionka w bardzo przystępnej cenie. Gwarantuje wysoką jakość, śliską powłokę oraz powtarzalną wytrzymałość węzłów, z której znana jest marka Westin.</div>
+                        <div class="kolory-lista">Splot: 8x | Przeznaczenie: Codzienny spinning</div>
+                    </div>
+                    <div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w3-plecione-linie" target="_blank">Zobacz modele</a></div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            stronę stworzył: Piotr Janasz
+        </footer>
+    </div>
+
+</body>
+</html>

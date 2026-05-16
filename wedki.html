@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spiningisty - Wędki Westin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl dla Szybkiego Menu Nawigacyjnego (Filtrów) */
+           .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; 
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .quick-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: #0a0a0a;
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .quick-nav a:hover {
+            color: #000;
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        .produkt-zdiecie img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+            mix-blend-mode: lighten; 
+        }
+        
+        .kolory-lista {
+            font-size: 0.75rem;
+            color: var(--primary);
+            margin-top: 10px;
+            font-weight: 500;
+            border-top: 1px dashed #333;
+            padding-top: 8px;
+        }
+        
+        .badge-new {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+ <div class="przycis">  
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-5748252d-5e99-4d62-b13a-4132ff7154f5" data-elfsight-app-lazy></div>
+            </div>
+
+    <div class="retina-overlay"></div>
+<canvas id="abyss-canvas"></canvas>
+    <div class="baner">
+        <header>
+            Profil Spiningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="wedki.html" class="active">Wędki</a></li>
+                <li><a href="kolowrotki.html">Kołowrotki</a></li>
+                <li><a href="przynety.html">Przynęty</a></li>
+                <li><a href="plecionki.html">Plecionki</a></li> 
+                <li><a href="wezły.html">Węzły</a></li>
+                <li><a href="forum.html">Galeria Życiówek</a></li>
+                <li><a href="Batymetria.html">Batymetria</a></li>
+            </ul>
+        </nav>
+
+        <main>
+         
+        
+            <div class="opis-strony">
+                Oficjalny katalog stajni <strong>Westin</strong>. Poznaj najbardziej zaawansowane technologicznie blanki na rynku, precyzyjnie dostrojone do każdej techniki połowu. Wybierz swój styl i zdominuj wodę.
+            </div>
+
+            <div class="quick-nav">
+                <a href="#finesse">Finesse & Light</a>
+                <a href="#classic">Classic Spin</a>
+                <a href="#heavy">Heavy Predator</a>
+                <a href="#vertical">Vertical & Boat</a>
+                <a href="#marine">Offshore & Trolling</a>
+            </div>
+
+            <div class="kategoria" id="finesse">Finesse & Light (Finezyjne i Lekkie)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/ab296879-3eb3-4345-9a50-2053459cb4e6/w831-0762-ml.jpg/categorysmall" alt="Dropshot"></div><div class="produkt-body">Dropshot<div class="produkt-opis">Niesamowicie czuła wklejka do sygnalizacji najdelikatniejszych skubnięć okoni i sandaczy.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/dropshot" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/4dad8d5c-9cab-47b9-a4fb-1464244b769a/w359_w3-finesse-crank-t-2nd_headline.jpg/categorysmall" alt="Finesse Crank"></div><div class="produkt-body">Finesse Crank<div class="produkt-opis">Miększa akcja blanku idealna do prowadzenia małych woblerów typu crankbait.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/finesse-crank" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/73883ba6-7fe7-4d4b-954d-b843cbb04095/w386_w3-finesse-jig_x.jpg/categorysmall" alt="Finesse Jig"></div><div class="produkt-body">Finesse Jig<div class="produkt-opis">Szybki i sztywny kij do agresywnego podbijania lekkich jigów i mikro-gum.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/finesse-jig" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c6344f21-320f-4948-8a94-7e5d2b4e3ff9/w394_w3-finesse-ned_headline.jpg/categorysmall" alt="Finesse Ned"></div><div class="produkt-body">Finesse Ned<div class="produkt-opis">Zaprojektowana specjalnie pod technikę Ned Rig. Maksymalne czucie dna.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/finesse-ned" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/ced0d3db-b5ec-4883-ad67-3fffb23da724/w1007_w10-finesse-shad_headline.jpg/categorysmall" alt="Finesse Shad"></div><div class="produkt-body">Finesse Shad<div class="produkt-opis">Klasyka łowienia z opadu na średnie dystanse. Czułość przenosząca prąd do łokcia.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/finesse-shad" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/e776573b-3ed4-4cef-8621-5b340328a927/w1004_headline_w10-finesse-t-t%26c.jpg/categorysmall" alt="Finesse T&C"></div><div class="produkt-body">Finesse T&C<div class="produkt-opis">Texas & Carolina rig. Doskonała zarówno pod kołowrotek stałoszpulowy jak i multik.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/finesse" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/1baf2489-1829-4559-8231-bb2502cd881f/w623_headline.jpg/categorysmall" alt="Light Softlure"></div><div class="produkt-body">Light Softlure<div class="produkt-opis">Uniwersalna wykałaczka do lekkich gum silikonowych i paprochów.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/light-softlure" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/086072a1-b917-4705-8aff-8c5b8827a38f/w438_w4-streetstick-2nd_headline.jpg/categorysmall" alt="Streetstick"></div><div class="produkt-body">Streetstick<div class="produkt-opis">Krótki, zwinny blank do miejskiego łowienia (Street Fishing) w kanałach i portach.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/streetstick" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/3aee4ee9-0550-4015-8e2d-3434eaf534ed/w832_headline.jpg/categorysmall" alt="Super Finesse"></div><div class="produkt-body">Super Finesse<div class="produkt-opis">Ultra-light podniesiony do rangi sztuki. Wędka, która waży tyle co piórko.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/super-finesse" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/a1939501-3e0c-4cd5-b2d9-7e9334e005f4/w387_w3-ultrastick_x.jpg/categorysmall" alt="Ultrastick"></div><div class="produkt-body">Ultrastick<div class="produkt-opis">Bardzo lekka wędka o świetnych właściwościach ładujących przy wyrzucie.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/ultrastick" target="_blank">Zobacz ofertę</a></div></div>
+            </div>
+
+            <div class="kategoria" id="classic">Classic Spin & All-Round (Klasyczne)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/19ade68c-b259-4d91-bfe2-b778d07e2d93/w637_w6-crankstick_headline.jpg/categorysmall" alt="Crankstick"></div><div class="produkt-body">Crankstick<div class="produkt-opis">Średnia moc do głęboko nurkujących woblerów. Genialnie trzyma rybę na kotwicy.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/crankstick" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/a2e6478a-0fb1-411f-a0d2-96e6e4eb954e/w1002_w10-spin_headline.jpg/categorysmall" alt="Spin"></div><div class="produkt-body">Spin<div class="produkt-opis">Klasyczne wędzisko do błystek i woblerów o progresywnej, płynnej akcji ugięcia.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/spin-b2c_spin" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c0f04683-c52b-4e9f-b9aa-7c1066db8773/w827-7222-m.jpg/categorysmall" alt="Spin & Blades"></div><div class="produkt-body">Spin & Blades<div class="produkt-opis">Kij stworzony do pracy z obrotówkami, wahadłówkami i wirującymi ogonkami.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/spin--blades" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/5ef8242a-afd9-4cf9-9f46-100210fdc342/w236_w2-spinnerbait-t_headline.jpg/categorysmall" alt="Spinnerbait"></div><div class="produkt-body">Spinnerbait<div class="produkt-opis">Blank świetnie tłumiący potężne wibracje wytwarzane przez duże spinnerbaity.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/spinnerbait" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/b43ee39b-e396-44df-9cc3-268f6aa12ec3/w225_1.jpg/categorysmall" alt="Spoon"></div><div class="produkt-body">Spoon<div class="produkt-opis">Finezyjny kij stworzony specjalnie pod lekkie wahadłówki (Area Trout).</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/spoon" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/934e75e2-c378-47b0-852d-56d0ee5ebb46/w248_w2-tele-spin_x.jpg/categorysmall" alt="Tele Spin"></div><div class="produkt-body">Tele Spin<div class="produkt-opis">Wysokiej klasy teleskop. Kompaktowy rozmiar, zero kompromisów w akcji blanku.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/tele-spin" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/b4d8ae0b-9343-4dea-9eb4-06a6ba535421/w3008_w3-twitch-%26-pop_headline.jpg/categorysmall" alt="Twitch & Pop"></div><div class="produkt-body">Twitch & Pop<div class="produkt-opis">Krótka, sztywna szpada do szarpania woblerów i łowienia popperami.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/twitch--pop" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/5478d051-a88d-4261-a403-a8968dbeffe4/w820-0702-mh.jpg/categorysmall" alt="VersiTeez"></div><div class="produkt-body">VersiTeez<div class="produkt-opis">Najbardziej wszechstronny kij. Obsłuży każdą przynętę w swoim przedziale wagowym.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/versiteez-rods---freshwater-rods--westin-fishing" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/157a0577-3bd4-46d1-87c8-adb977604e47/w818-0802-h.jpg/categorysmall" alt="Shad & Jig"></div><div class="produkt-body">Shad & Jig<div class="produkt-opis">Wybitny uniwersał pod gumy. Piekielnie szybki blank dla łowców z opadu.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/shad--jig" target="_blank">Zobacz ofertę</a></div></div>
+            </div>
+
+            <div class="kategoria" id="heavy">Heavy Predator & Big Bait (Szczupak i Okazy)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/549d70d6-acb7-4491-a5a4-af106b165e34/w3001_w3-jerkbait-t_headline.jpg/categorysmall" alt="Jerkbait"></div><div class="produkt-body">Jerkbait<div class="produkt-opis">Ekstremalnie sztywny kij o krótkim dolniku. Zaprojektowany do precyzyjnego jerkowania.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/jerkbait" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/a35c28b0-604f-4a17-8e9b-0dd6a577d114/w634_w6-jerk-%26-swimbait_headline.jpg/categorysmall" alt="Jerk & Swimbait"></div><div class="produkt-body">Jerk & Swimbait<div class="produkt-opis">Przeznaczony do ciężkich przynęt bezsterowych i wielkich swimbaitów.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/jerk--swimbait" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c196921c-c669-4ff9-803a-b534fce8f25d/w1006_w10-monsterstick-t_headline.jpg/categorysmall" alt="Monsterstick"></div><div class="produkt-body">Monsterstick<div class="produkt-opis">Potwór do miotania największymi i najcięższymi przynętami sylikonowymi XXL.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/monsterstick-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/1326429f-9304-4d9e-852e-03ab895d0648/w1001_w10-powercast-t-headline.jpg/categorysmall" alt="Powercast"></div><div class="produkt-body">Powercast<div class="produkt-opis">Legenda do łowienia szczupaków na gumy. Idealny balans mocy i amortyzacji.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powercast--powercast-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/3022ac99-1165-4937-937b-39d19394a191/w427_w4-powerlure-2nd_headline.jpg/categorysmall" alt="Powerlure"></div><div class="produkt-body">Powerlure<div class="produkt-opis">Ciężki spinning do dużych przynęt. Przenosi potężną siłę podczas zacięcia.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powerlure" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/31866025-bc7b-442d-a12e-5f5c0b55343f/w426_w4-powershad-t-2nd_headline.jpg/categorysmall" alt="Powershad"></div><div class="produkt-body">Powershad<div class="produkt-opis">Sztywniejszy odpowiednik Powercasta. Perfekcyjny do ciężkiego łowienia z opadu.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powershad--powershad-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/07e3ec19-c67c-441b-a702-149854845c30/w340_powerspin-t_headline.jpg/categorysmall" alt="Powerspin"></div><div class="produkt-body">Powerspin<div class="produkt-opis">Zaprojektowany do łączenia z potężnymi kołowrotkami. Kij do zadań specjalnych.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powerspin-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/ec9e7c6a-0779-4ee6-86bf-9b72725ebeea/w620_headline_w6-powerstick.jpg/categorysmall" alt="Powerstick"></div><div class="produkt-body">Powerstick<div class="produkt-opis">Nowoczesny, lekki kij do ciężkiego castingu minimalizujący straty ryb.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powerstick" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/1c803d6d-e06d-4e5f-93e0-dbc20f74ac68/w364_w3-powerstrike-t-2nd_headline.jpg/categorysmall" alt="Powerstrike"></div><div class="produkt-body">Powerstrike<div class="produkt-opis">Błyskawiczny kij na średnie szczupaki i duże sandacze. Czysta adrenalina.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powerstrike" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/04e7549f-f713-495d-b9aa-55a63c6d4134/w1005_w10-powerteez_headline.jpg/categorysmall" alt="PowerTeez"></div><div class="produkt-body">PowerTeez<div class="produkt-opis">Genialne wyważenie. Łowienie ciężkimi przynętami staje się bezwysiłkowe.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powerteez" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/7e452ea6-6ba9-487c-9fbb-1fc01042082a/w234_w2-z-hunter-force_headline.jpg/categorysmall" alt="Z-Hunter"></div><div class="produkt-body">Z-Hunter<div class="produkt-opis">Dedykowany niszczyciel okazów z najtrudniejszych, zarośniętych łowisk Europy.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/z-hunter" target="_blank">Zobacz ofertę</a></div></div>
+            </div>
+
+            <div class="kategoria" id="vertical">Vertical, Pelagic & Boat (Pionowe i Łodziowe)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/fe6d264e-6863-428e-b6a6-0d6babbb8664/w628_w6-belly-boat_headline.jpg/categorysmall" alt="Belly Boat"></div><div class="produkt-body">Belly Boat<div class="produkt-opis">Krótki blank z przedłużonym dolnikiem, idealny do łowienia z małych pływadełek.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/belly-boat" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/5197ac22-f3e1-45e5-b7d3-57cf6543c71d/w366-0703_w3-boat-2nd_headline.jpg/categorysmall" alt="Boat"></div><div class="produkt-body">Boat<div class="produkt-opis">Tradycyjna, niezwykle wytrzymała wędka do ciężkiego wędkarstwa z łodzi.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/boat" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/06834d10-fe6e-4ec1-923f-7a94d81e3802/w391_w3-livecast-t_x.jpg/categorysmall" alt="Livecast"></div><div class="produkt-body">Livecast<div class="produkt-opis">Do strzelania w drapieżniki namierzane na przetwornikach Live (np. ActiveTarget).</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/live-cast" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/345c6cb3-c843-4a69-bf91-d1d0c9cd1229/w635_w6-monster-v-jig_headline.jpg/categorysmall" alt="Monster V-Jig"></div><div class="produkt-body">Monster V-Jig<div class="produkt-opis">Ekstremalny kij wertykalny na sumy i gigantyczne sandacze w rzecznych rynnach.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/monster-v-jig" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/8b8a5f47-6d1c-4321-96d5-929f95e94f89/w433_w4-vertical-jigging-2nd_headline.jpg/categorysmall" alt="Vertical Jigging"></div><div class="produkt-body">Vertical Jigging<div class="produkt-opis">Wyczulony klasyk do wertykalnego kuszenia sandaczy w strefie przydennej.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/vertical-jigging--vertical-jigging-t" target="_blank">Zobacz ofertę</a></div></div>
+            </div>
+
+            <div class="kategoria" id="marine">Offshore, Trolling & Specimen (Morskie i Okazowe)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/50c70f25-ee1d-41a7-91b4-2242253e9746/w625_headline.jpg/categorysmall" alt="Bombarda"></div><div class="produkt-body">Bombarda<div class="produkt-opis">Długa wędka do rzutów zestawami z bombardą za trocią i beloną na plażach.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/bombarda-" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/d4cb8f76-2d9e-4622-83b4-739f7f8bb761/w240_w2-deadbait-lakes-%26-pits-st_headline.jpg/categorysmall" alt="Deadbait"></div><div class="produkt-body">Deadbait<div class="produkt-opis">Specjalistyczny blank stworzony do łowienia szczupaków na martwą rybkę.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/deadbait" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c69516c5-5010-41d9-a82d-5bc857008d36/w395_w3-hybridcast-t_x.jpg/categorysmall" alt="HybridCast"></div><div class="produkt-body">HybridCast<div class="produkt-opis">Wytrzymałość węglowo-szklanych kompozytów na ekstremalne morskie warunki.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/hybridcast-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c671e4de-fecd-40af-a1fd-47b2952b85f6/w267_w2-hybrid-slow-jigging_headline.jpg/categorysmall" alt="Hybrid Slow Jigging"></div><div class="produkt-body">Hybrid Slow Jigging<div class="produkt-opis">Konstrukcja do technicznego jigowania na dużych głębokościach oceanicznych.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/hybrid-slow-jigging" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/304c246a-64dc-4d72-b155-2408124b8d08/w607_headline_01.jpg/categorysmall" alt="Jigging"></div><div class="produkt-body">Jigging<div class="produkt-opis">Ciężka artyleria morska do jigowania pilkerami i wielkimi gumami np. w Norwegii.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/jigging--jigging-t" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/23b44179-6156-4996-97c4-d7946600378c/w845_w8-offshore-powercast_headline.jpg/categorysmall" alt="Offshore Powercast"></div><div class="produkt-body">Offshore Powercast<div class="produkt-opis">Zbudowana z myślą o halibucie. Niewyobrażalna moc morskiego blanku.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/offshore-powercast" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/a61c26ed-11d1-49ed-a175-b89d62db12f7/w3ps2_w3-powersturgeon-2nd_headline.jpg/categorysmall" alt="Powersturgeon"></div><div class="produkt-body">Powersturgeon<div class="produkt-opis">Potężna broń przeznaczona wyłącznie do walki z gigantycznymi jesiotrami.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/powersturgeon" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/3b4a1d80-03d2-4c90-b94b-14628f4ec130/w847_w8-precision-cast_headline.jpg/categorysmall" alt="Precision Cast"></div><div class="produkt-body">Precision Cast<div class="produkt-opis">Morski kij kładący nacisk na chirurgiczną celność podań przynęt z łodzi.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/precision-cast" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/e9533850-5e1b-4f1f-9199-6505d897144f/w3002_w3-predator-trolling_headline.jpg/categorysmall" alt="Predator Trolling"></div><div class="produkt-body">Predator Trolling<div class="produkt-opis">Blank zaprojektowany do uciągu najcięższych systemów trollingowych.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/trolling-b2c_w07pretrol" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/81db9064-511f-450a-94cc-a4982e1b93f7/w850_w8-rockshore-apex-predator_headline.jpg/categorysmall" alt="Rockshore Apex"></div><div class="produkt-body">Rockshore Apex<div class="produkt-opis">Popping i rzucanie z klifów w poszukiwaniu ryb tuńczykowatych.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/rockshore-apex-predator" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/c0ce9f19-4ac9-4b81-9169-88b51effb944/w250_w2-salmon_x.jpg/categorysmall" alt="Salmon"></div><div class="produkt-body">Salmon<div class="produkt-opis">Znakomita amortyzacja, stworzona pod dzikie odjazdy rzecznych łososi.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/salmon" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/1f72ea7b-b837-4fb7-8e1e-d8c2f883f519/w369_w3-seabass-2nd_headline.jpg/categorysmall" alt="SeaBass & SBass"></div><div class="produkt-body">SeaBass & SBass<div class="produkt-opis">Szybkie, smukłe wędki do polowania na ostrożne labraksy (okonie morskie).</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/seabass" target="_blank">Zobacz ofertę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/6269814c-6443-43f6-8f3e-3bf47b5f6308/w851_w8-slow-jigging_headline.jpg/categorysmall" alt="Slow Jigging"></div><div class="produkt-body">Slow Jigging<div class="produkt-opis">Sprężynujący blank nadający przynęcie uwodzicielski ruch pionowy w toni.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/slow-jigging" target="_blank">Zobacz ofertę</a></div></div>
+            </div>
+            <script>
+    // ABYSS CORE GRAPHICS ENGINE
+    const canvas = document.getElementById('abyss-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, boids = [];
+    const cursor = { x: -2000, y: -2000 };
+
+    function initCanvasSize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    class BoidAI {
+        constructor() {
+            this.x = Math.random() * width; this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 2; this.vy = (Math.random() - 0.5) * 2;
+            this.size = Math.random() * 2 + 1;
+        }
+        update() {
+            let d = Math.hypot(this.x - cursor.x, this.y - cursor.y);
+            if (d < 250) { 
+                this.vx += ((this.x - cursor.x) / d) * 1.2; 
+                this.vy += ((this.y - cursor.y) / d) * 1.2; 
+            }
+            this.x += this.vx; this.y += this.vy;
+            this.vx *= 0.96; this.vy *= 0.96;
+            if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+            if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+        }
+        draw() { 
+            ctx.fillStyle = 'rgba(175, 154, 100, 0.15)'; 
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); 
+        }
+    }
+
+    function createBoidsCluster() { 
+        initCanvasSize(); 
+        boids = []; 
+        for(let i=0; i<100; i++) boids.push(new BoidAI()); 
+    }
+
+    function coreRenderLoop() {
+        ctx.clearRect(0, 0, width, height); 
+        ctx.strokeStyle = 'rgba(175, 154, 100, 0.02)'; 
+        ctx.beginPath();
+        for(let i=0; i<boids.length; i++) { 
+            for(let j=i+1; j<boids.length; j++) { 
+                if(Math.hypot(boids[i].x - boids[j].x, boids[i].y - boids[j].y) < 140) { 
+                    ctx.moveTo(boids[i].x, boids[i].y); 
+                    ctx.lineTo(boids[j].x, boids[j].y); 
+                } 
+            } 
+        }
+        ctx.stroke(); 
+        boids.forEach(b => { b.update(); b.draw(); }); 
+        requestAnimationFrame(coreRenderLoop);
+    }
+
+    window.addEventListener('mousemove', (e) => { cursor.x = e.clientX; cursor.y = e.clientY; });
+    window.addEventListener('resize', initCanvasSize);
+    createBoidsCluster(); coreRenderLoop();
+</script>
+        </main>
+
+        <footer>
+            Stronę stworzył: Piotr Janasz | Autoryzowany partner katalogowy Westin
+        </footer>
+    </div>
+
+</body>
+</html>

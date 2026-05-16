@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spinningisty - Batymetria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="retina-overlay"></div>
+    <canvas id="abyss-canvas"></canvas>
+
+    <div class="baner">
+        <header>
+            Profil Spinningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Strona Główna</b></a></li>
+                <li><a href="wedki.html"><b>Wędki</b></a></li>
+                <li><a href="kolowrotki.html"><b>Kołowrotki</b></a></li>
+                <li><a href="przynety.html"><b>Przynęty</b></a></li>
+                <li><a href="plecionki.html"><b>Plecionki</b></a></li> 
+                <li><a href="wezły.html"><b>Węzły</b></a></li>
+                <li><a href="forum.html"><b>Galeria Życiówek</b></a></li>
+                <li><a href="Batymetria.html" class="active"><b>Batymetria</b></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="opis-strony">
+                Zrozumienie ukształtowania dna to klucz do namierzenia stanowisk żerowania drapieżników. Poniżej znajdziesz szczegółowe rzuty batymetryczne oraz interaktywne plany lokacji, ułatwiające lokalizację podwodnych górek, koryt rzecznych oraz gwałtownych spadków.
+            </div>
+
+            <div class="kategoria">🗺️ Hydrografia & Lokacje Taktyczne</div>
+
+            <div class="batymetria-container">
+                
+                <div class="widget-abyss-card">
+                    <div class="widget-hud-header">
+                        Ukształtowanie dna i izobaty
+                        <span style="font-size:0.75rem; color:var(--primary-color); border:1px solid var(--primary-color); padding:2px 6px; border-radius:4px;">SONAR ONLINE</span>
+                    </div>
+                    <div class="widget-abyss-body" style="height: 650px; padding: 10px; overflow: hidden;">
+                        <script src="https://elfsightcdn.com/platform.js" async></script>                
+                        <div class="elfsight-app-8eb9403f-6a87-455c-88cc-4e04eb091979" data-elfsight-app-lazy></div>
+                    </div>
+                </div>
+
+                <div class="widget-abyss-card mapa" id="mapa">
+                    <div class="widget-hud-header">
+                        Lokalizacja i punkty orientacyjne akwenów
+                        <span style="font-size:0.75rem; color:var(--primary-color); border:1px solid var(--primary-color); padding:2px 6px; border-radius:4px;">GPS CONNECTED</span>
+                    </div>
+                    <div class="widget-abyss-body" style="height: 650px; padding: 10px; overflow: hidden;">
+                        <script src="https://elfsightcdn.com/platform.js" async></script>
+                        <div class="elfsight-app-5ec4dec4-d821-445a-a7aa-6b1d70b28ba4" data-elfsight-app-lazy></div>            
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            stronę stworzył: Piotr Janasz
+        </footer>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('abyss-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, boids = [];
+        const cursor = { x: -2000, y: -2000 };
+
+        function initCanvasSize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class BoidAI {
+            constructor() {
+                this.x = Math.random() * width; this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 2; this.vy = (Math.random() - 0.5) * 2;
+                this.size = Math.random() * 2 + 1;
+            }
+            update() {
+                let d = Math.hypot(this.x - cursor.x, this.y - cursor.y);
+                if (d < 250) { 
+                    this.vx += ((this.x - cursor.x) / d) * 1.2; 
+                    this.vy += ((this.y - cursor.y) / d) * 1.2; 
+                }
+                this.x += this.vx; this.y += this.vy;
+                this.vx *= 0.96; this.vy *= 0.96;
+                if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+                if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+            }
+            draw() { 
+                ctx.fillStyle = 'rgba(175, 154, 100, 0.15)'; 
+                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); 
+            }
+        }
+
+        function createBoidsCluster() { 
+            initCanvasSize(); 
+            boids = []; 
+            for(let i=0; i<100; i++) boids.push(new BoidAI()); 
+        }
+
+        function coreRenderLoop() {
+            ctx.clearRect(0, 0, width, height); 
+            ctx.strokeStyle = 'rgba(175, 154, 100, 0.02)'; 
+            ctx.beginPath();
+            for(let i=0; i<boids.length; i++) { 
+                for(let j=i+1; j<boids.length; j++) { 
+                    if(Math.hypot(boids[i].x - boids[j].x, boids[i].y - boids[j].y) < 140) { 
+                        ctx.moveTo(boids[i].x, boids[i].y); 
+                        ctx.lineTo(boids[j].x, boids[j].y); 
+                    } 
+                } 
+            }
+            ctx.stroke(); 
+            boids.forEach(b => { b.update(); b.draw(); }); 
+            requestAnimationFrame(coreRenderLoop);
+        }
+
+        window.addEventListener('mousemove', (e) => { cursor.x = e.clientX; cursor.y = e.clientY; });
+        window.addEventListener('resize', initCanvasSize);
+        createBoidsCluster(); coreRenderLoop();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (sessionStorage.getItem('zjedzNaDol') === 'true') {
+                sessionStorage.removeItem('zjedzNaDol'); 
+                setTimeout(() => {
+                    const elementMapa = document.getElementById('mapa');
+                    if (elementMapa) {
+                        elementMapa.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 800);
+            }
+        });
+    </script>
+</body>
+</html>

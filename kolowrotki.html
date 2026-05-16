@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Spiningisty - Kołowrotki Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+   .quick-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 75px; 
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .quick-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: #0a0a0a;
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .quick-nav a:hover {
+            color: #000;
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        .produkt-zdiecie img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+            mix-blend-mode: lighten; 
+        }
+        
+        .kolory-lista {
+            font-size: 0.75rem;
+            color: var(--primary);
+            margin-top: 10px;
+            font-weight: 500;
+            border-top: 1px dashed #333;
+            padding-top: 8px;
+        }
+        
+        .badge-new {
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="retina-overlay"></div>
+<canvas id="abyss-canvas"></canvas>
+    <div class="baner">
+        <header>
+            Profil Spiningisty
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="wedki.html">Wędki</a></li>
+                <li><a href="kolowrotki.html" class="active">Kołowrotki</a></li>
+                <li><a href="przynety.html">Przynęty</a></li>
+                <li><a href="plecionki.html">Plecionki</a></li> 
+                <li><a href="wezły.html">Węzły</a></li>
+                <li><a href="forum.html">Galeria Życiówek</a></li>
+                <li><a href="Batymetria.html">Batymetria</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="przycisk">  
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-5748252d-5e99-4d62-b13a-4132ff7154f5" data-elfsight-app-lazy></div>
+            </div>   
+        
+            <div class="opis-strony">
+                Wybierz swoją broń do walki z drapieżnikami. Zgromadziliśmy tu najbardziej zaawansowane technologicznie kołowrotki spinningowe i multiplikatory castingowe ze stajni <strong>Shimano, Daiwa oraz Westin</strong>. Żadnych kompromisów – tylko sprzęt dla prawdziwych łowców.
+            </div>
+
+            <div class="quick-nav">
+                <a href="#westin">WESTIN (Spinning i Jigging)</a>
+                <a href="#shimano">SHIMANO (Spinning i Casting)</a>
+                <a href="#daiwa-spin">DAIWA: Spinning (LT Concept)</a>
+                <a href="#daiwa-cast">DAIWA: Multiplikatory Niskoprofilowe</a>
+                <a href="#daiwa-sea">DAIWA: Heavy Spinning / Morskie</a>
+            </div>
+
+            <div class="kategoria" id="westin">Serie Kołowrotków WESTIN</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/6fefc70a-c997-4cae-b80d-ca34a916e927/r010_w8-jigging-reel_headline.jpg/categorysmall" alt="Westin W8"></div><div class="produkt-body">Seria W8<div class="produkt-opis">Flagowe maszyny Westin stworzone z bezkompromisowych materiałów. Topowa inżynieria do spinu.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w8-koowrotki" target="_blank">Zobacz ofertę Westin</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/1a408e5c-bb96-46cb-9ce4-92bb9f98c310/r006_w6-ssg_headline.jpg/categorysmall" alt="Westin W6"></div><div class="produkt-body">Seria W6<div class="produkt-opis">Gwarantuje idealny balans i jedwabiście płynną pracę pod największym obciążeniem.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w6-koowrotki" target="_blank">Zobacz ofertę Westin</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/315b3042-c730-4887-840a-999493089426/r003_w4-ssg_headline.jpg/categorysmall" alt="Westin W4"></div><div class="produkt-body">Seria W4<div class="produkt-opis">Złoty środek dla wymagających. Niebywała wytrzymałość połączona z nowoczesnym designem.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w4-koowrotki" target="_blank">Zobacz ofertę Westin</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/cef51bcb-25db-4a82-9fac-936849c7d20d/r012_w3-spinning-reel_headline.jpg/categorysmall" alt="Westin W3"></div><div class="produkt-body">Seria W3<div class="produkt-opis">Wysoce niezawodny sprzęt na drapieżniki zaprojektowany przez wędkarzy i dla wędkarzy.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w3-koowrotki" target="_blank">Zobacz ofertę Westin</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://www.westin-fishing.com/image/01ad9f5d-11b5-4829-ad05-268d04413ed6/r013_w2-spinning-reel_headline.jpg/categorysmall" alt="Westin W2"></div><div class="produkt-body">Seria W2<div class="produkt-opis">Perfekcyjny start w świecie sprzętu ze skandynawskim rodowodem z linii Westin.</div></div><div class="produkt-przycisk"><a href="https://www.westin-fishing.com/pl/w2-koowrotki" target="_blank">Zobacz ofertę Westin</a></div></div>
+            </div>
+
+            <div class="kategoria" id="shimano">Serie Kołowrotków SHIMANO</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="kołowrotek1.jpg" alt="Shimano Spinning"></div><div class="produkt-body">Shimano Stella FK / Twin Power<div class="produkt-opis">Królestwo stałej szpuli. Flagowe modele z technologią InfinityXross zapewniającą niesamowitą gładkość.</div></div><div class="produkt-przycisk"><a href="https://fish.shimano.com/pl-PL/product/reels/spinning.html" target="_blank">Zobacz serię Shimano</a></div></div>
+                
+                <div class="produkt"><div class="produkt-zdiecie"><img src="kołowrotek3.jpg" alt="Shimano Vanford"></div><div class="produkt-body">Shimano Vanford / Stradic<div class="produkt-opis">Ultraniskie opory startowe dzięki rotorom MGL. Idealne do okoniowania i lekkiego łowienia sandaczy.</div></div><div class="produkt-przycisk"><a href="https://fish.shimano.com/pl-PL/product/reels/spinning.html" target="_blank">Zobacz serię Shimano</a></div></div>
+
+                <div class="produkt"><div class="produkt-zdiecie"><img src="multik1.png" alt="Shimano Baitcasting"></div><div class="produkt-body">Multiplikatory Niskoprofilowe<div class="produkt-opis">Antares, Metanium czy Curado. Zaawansowane technologicznie konstrukcje z systemami kontroli rzutu DC.</div></div><div class="produkt-przycisk"><a href="https://fish.shimano.com/pl-PL/product/reels/baitcasting.html" target="_blank">Zobacz serię Shimano</a></div></div>
+                
+                <div class="produkt"><div class="produkt-zdiecie"><img src="multik 3.jpg" alt="Shimano Multiplier"></div><div class="produkt-body">Multiplikatory Okrągłe i Jiggowe<div class="produkt-opis">Calcutta Conquest czy Ocea Jigger. Potężne, aluminiowe ramy wycinane z jednego bloku metalu do swimbaitów.</div></div><div class="produkt-przycisk"><a href="https://fish.shimano.com/pl-PL/product/reels/multiplier.html" target="_blank">Zobacz serię Shimano</a></div></div>
+            </div>
+
+            <div class="kategoria" id="daiwa-spin">DAIWA - Kołowrotki Spinningowe (LT Concept)</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/887/8115/dcs-thumbnail.png" alt="22 Exist LT"></div><div class="produkt-body">22 Exist LT<div class="produkt-opis">Kołowrotek spinningowy klasy Ultra-Premium z obudową Monocoque (MQ).</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/22_exist_lt--8637m7.html" target="_blank">Kup Exist LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/411/8058/dcs-thumbnail.png" alt="23 Airity LT"></div><div class="produkt-body">23 Airity LT<div class="produkt-opis">Ekstremalnie lekki, spinningowy majstersztyk w technologii Airdrive Design.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_airity_lt--8835m7.html" target="_blank">Kup Airity LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/518/10178/dcs-thumbnail.png" alt="24 Certate LT"></div><div class="produkt-body">24 Certate LT<div class="produkt-opis">Legendarna niezawodność, stworzony z myślą o najcięższej orce w rzece.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/24_certate_lt--9047m7.html" target="_blank">Kup Certate LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/205/12357/dcs-thumbnail.png" alt="26 Certate HD LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Certate HD LT<div class="produkt-opis">Wersja Heavy Duty dla łowców troci, sandaczy i głowacic. Najwyższa wytrzymałość.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_certate_hd_lt--9532m7.html" target="_blank">Kup Certate HD</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/704/10300/dcs-thumbnail.png" alt="24 Luvias LT"></div><div class="produkt-body">24 Luvias LT<div class="produkt-opis">Kultowy młynek spinningowy w nowej odsłonie. Precyzja made in Japan.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/24_luvias_lt--9223m7.html" target="_blank">Kup Luvias LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/933/11174/dcs-thumbnail.png" alt="25 Ballistic Air LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Ballistic Air LT<div class="produkt-opis">Czysta finezja do najlżejszego spinningu i techniki ultra-light / street fishing.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_ballistic_air_lt--9276m7.html" target="_blank">Kup Ballistic Air</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/990/11176/dcs-thumbnail.png" alt="25 Ballistic HD LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Ballistic HD LT<div class="produkt-opis">Mocna, odświeżona wersja słynnego Ballistica stworzona dla cięższych przynęt.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_ballistic_hd_lt--9275m7.html" target="_blank">Kup Ballistic HD</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/373/12244/dcs-thumbnail.png" alt="25 Caldia LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Caldia LT<div class="produkt-opis">Najlepszy stosunek ceny do jakości w średnim segmencie. Ochrona rotora MagSealed.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_caldia_lt--9274m7.html" target="_blank">Kup Caldia LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/919/8430/dcs-thumbnail.png" alt="23 Lexa LT"></div><div class="produkt-body">23 Lexa LT<div class="produkt-opis">Niezwykle mocny kołowrotek z aluminiowym, sztywnym korpusem HardBodyZ.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_lexa_lt--8834m7.html" target="_blank">Kup Lexa LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/866/12347/dcs-thumbnail.png" alt="26 Freams LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Freams LT<div class="produkt-opis">Znakomity klasyk w nowym wydaniu o udoskonalonej przekładni Tough Digigear.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_freams_lt--9533m7.html" target="_blank">Kup Freams LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/715/11229/dcs-thumbnail.png" alt="25 Prorex MQ LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Prorex MQ LT<div class="produkt-opis">Szczupakowy morderca wyposażony w obudowę jednoelementową Monocoque (MQ).</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_prorex_mq_lt--9292m7.html" target="_blank">Kup Prorex MQ</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/126/11231/dcs-thumbnail.png" alt="25 Prorex V LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Prorex V LT<div class="produkt-opis">Agresywny wygląd, niska waga i moc niezbędna do polowania na grube zębate.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_prorex_v_lt--9291m7.html" target="_blank">Kup Prorex V</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/249/9490/dcs-thumbnail.png" alt="23 Fuego LT"></div><div class="produkt-body">23 Fuego LT<div class="produkt-opis">Absolutny hit sprzedażowy. Oferuje system ochrony przed wodą MagSealed w bardzo przystępnym budżecie.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_fuego_lt--8836m7.html" target="_blank">Kup Fuego LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/859/9492/dcs-thumbnail.png" alt="23 Exceler LT"></div><div class="produkt-body">23 Exceler LT<div class="produkt-opis">Solidny kołowrotek z wkręcaną korbką dla pełnego wyeliminowania niechcianych luzów rączki.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_exceler_lt--8837m7.html" target="_blank">Kup Exceler LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/745/9496/dcs-thumbnail.png" alt="23 Legalis LT"></div><div class="produkt-body">23 Legalis LT<div class="produkt-opis">Inżynieria Daiwy wykonana z tworzywa Zaion V dla maksymalnego zredukowania masy własnej kołowrotka.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_legalis_lt--8838m7.html" target="_blank">Kup Legalis LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/289/9498/dcs-thumbnail.png" alt="23 Ninja LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>23 Ninja LT<div class="produkt-opis">Czarno-czerwona legenda wód. Kołowrotek, który w tym przedziale cenowym nie ma sobie równych na rynku.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/23_ninja_lt--8833m7.html" target="_blank">Kup Ninja LT</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/669/11182/dcs-thumbnail.png" alt="26 Crossfire LT"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Crossfire LT<div class="produkt-opis">Płynna praca i nowa geometria przekładni dostępna dla każdego początkującego spinningisty.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_crossfire_lt--9424m7.html" target="_blank">Kup Crossfire</a></div></div>
+            </div>
+
+            <div class="kategoria" id="daiwa-cast">DAIWA - Multiplikatory Castingowe</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/656/11209/dcs-thumbnail.png" alt="25 Steez LIMITED CT SV TW 70"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Steez LIMITED CT SV TW<div class="produkt-opis">Bezkompromisowy flagowiec niskoprofilowy na lekkie i średnie przynęty (system rzutowy SV).</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_steez_limited_ct_sv_tw_70--9280m7.html" target="_blank">Kup Steez Ltd</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/128/12360/dcs-thumbnail.png" alt="26 Ryoga"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Ryoga<div class="produkt-opis">Masywny, ekstremalnie wytrzymały kołowrotek o okrągłym profilu. Przeznaczony do największych swimbaitów.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_ryoga--9535m7.html" target="_blank">Kup Ryoga</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/442/12384/dcs-thumbnail.png" alt="26 Tatula Elite Pitchin"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Tatula Elite Pitchin' / Flippin'<div class="produkt-opis">Skrojona specjalnie pod celne, agresywne podania z krótkiego dystansu blisko zawad.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_tatula_elite_pitchinflippin_hl_xhl--9541m7.html" target="_blank">Kup Tatula Elite</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/704/12391/dcs-thumbnail.png" alt="26 Tatula BF TW"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Tatula BF TW 8.1L<div class="produkt-opis">Wersja Bait Finesse (BF) do swobodnego miotania mikroskopijnymi przynętami z użyciem multiplikatora.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_tatula_bf_tw_81l--9542m7.html" target="_blank">Kup Tatula BF</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/356/11219/dcs-thumbnail.png" alt="25 Tatula TW 150"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Tatula TW 150<div class="produkt-opis">Zwiększona pojemność i moc uciągu do operowania średnimi i dużymi gumami szczupakowymi.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_tatula_tw_150--9281m7.html" target="_blank">Kup Tatula 150</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/406/11220/dcs-thumbnail.png" alt="25 Tatula TW 200"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Tatula TW 200<div class="produkt-opis">Głęboka szpula i długa korba – pancernik przeznaczony do jerków i wielkich gum na grubego zwierza.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_tatula_tw_200--9282m7.html" target="_blank">Kup Tatula 200</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/677/11233/dcs-thumbnail.png" alt="26 Prorex TW HD 200"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Prorex TW HD 200<div class="produkt-opis">Prawdziwy wół roboczy (Heavy Duty). Multiplikator dedykowany wielkim drapieżnikom i dużej fali.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_prorex_tw_hd_200--9499m7.html" target="_blank">Kup Prorex HD</a></div></div>
+            </div>
+
+            <div class="kategoria" id="daiwa-sea">DAIWA - Heavy Spinning i Morskie Drapieżniki</div>
+            <div class="lista">
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/744/11203/dcs-thumbnail.png" alt="25 Saltiga"></div><div class="produkt-body"><span class="badge-new">Nowość</span>25 Saltiga<div class="produkt-opis">Najpotężniejszy morski kołowrotek ze stałą szpulą do siłowych starć z tuńczykami, halibutami i sumami.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/25_saltiga--9278m7.html" target="_blank">Kup Saltigę</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/168/10349/dcs-thumbnail.png" alt="24 Saltiga L"></div><div class="produkt-body"><span class="badge-new">Nowość</span>24 Saltiga L<div class="produkt-opis">Ekstremalnie wytrzymały multiplikator, maszyna zbrojna do połowów ciężkich jigami w słonej wodzie.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/24_saltiga_l--9079m7.html" target="_blank">Kup Saltiga L</a></div></div>
+                <div class="produkt"><div class="produkt-zdiecie"><img src="https://pl.daiwa.de/public/928/12351/dcs-thumbnail.png" alt="26 Certate SW"></div><div class="produkt-body"><span class="badge-new">Nowość</span>26 Certate SW (Salt Water)<div class="produkt-opis">Zaprojektowany do brutalnego, siłowego spinningowania i jiggowania, odporny na destrukcyjną solankę.</div></div><div class="produkt-przycisk"><a href="https://pl.daiwa.de/26_certate_sw--9540m7.html" target="_blank">Kup Certate SW</a></div></div>
+            </div>
+<script>
+    // ABYSS CORE GRAPHICS ENGINE
+    const canvas = document.getElementById('abyss-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, boids = [];
+    const cursor = { x: -2000, y: -2000 };
+
+    function initCanvasSize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+    }
+
+    class BoidAI {
+        constructor() {
+            this.x = Math.random() * width; this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * 2; this.vy = (Math.random() - 0.5) * 2;
+            this.size = Math.random() * 2 + 1;
+        }
+        update() {
+            let d = Math.hypot(this.x - cursor.x, this.y - cursor.y);
+            if (d < 250) { 
+                this.vx += ((this.x - cursor.x) / d) * 1.2; 
+                this.vy += ((this.y - cursor.y) / d) * 1.2; 
+            }
+            this.x += this.vx; this.y += this.vy;
+            this.vx *= 0.96; this.vy *= 0.96;
+            if (this.x < 0) this.x = width; if (this.x > width) this.x = 0;
+            if (this.y < 0) this.y = height; if (this.y > height) this.y = 0;
+        }
+        draw() { 
+            ctx.fillStyle = 'rgba(175, 154, 100, 0.15)'; 
+            ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); 
+        }
+    }
+
+    function createBoidsCluster() { 
+        initCanvasSize(); 
+        boids = []; 
+        for(let i=0; i<100; i++) boids.push(new BoidAI()); 
+    }
+
+    function coreRenderLoop() {
+        ctx.clearRect(0, 0, width, height); 
+        ctx.strokeStyle = 'rgba(175, 154, 100, 0.02)'; 
+        ctx.beginPath();
+        for(let i=0; i<boids.length; i++) { 
+            for(let j=i+1; j<boids.length; j++) { 
+                if(Math.hypot(boids[i].x - boids[j].x, boids[i].y - boids[j].y) < 140) { 
+                    ctx.moveTo(boids[i].x, boids[i].y); 
+                    ctx.lineTo(boids[j].x, boids[j].y); 
+                } 
+            } 
+        }
+        ctx.stroke(); 
+        boids.forEach(b => { b.update(); b.draw(); }); 
+        requestAnimationFrame(coreRenderLoop);
+    }
+
+    window.addEventListener('mousemove', (e) => { cursor.x = e.clientX; cursor.y = e.clientY; });
+    window.addEventListener('resize', initCanvasSize);
+    createBoidsCluster(); coreRenderLoop();
+</script>
+        </main>
+
+        <footer>
+            Stronę stworzył: Piotr Janasz | Autoryzowane portfolio marek premium
+        </footer>
+    </div>
+
+</body>
+</html>
